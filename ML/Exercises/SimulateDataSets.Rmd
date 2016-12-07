@@ -1,7 +1,7 @@
 ---
 title: "Regression and Classification Exercises"
 author: "Soma S Dhavala"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=TRUE}
@@ -328,4 +328,10 @@ write.csv(Satellite,"Ex05.class.csv",row.names = F)
     + Miconception: 
     + Concepts: Class Imbalance, Multi-class classification, RoC Curve, Classification Truth Table, type-1,2 errors, Classifier summaries 
     + Techniques/Methods: Cross-validation, genie-entropy,logistic-regression, Decision-Trees, Resampling  
+```{r}
+```{r}
+
+```
+
+```
 

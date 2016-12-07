@@ -166,7 +166,7 @@ y &lt;- X%*%beta
 writeData(X,y,&quot;Ex01&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="multiple-features" class="section level2">
@@ -186,7 +186,7 @@ y &lt;- X%*%beta
 writeData(X,y,&quot;Ex02a&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="b-correlated-features" class="section level3">
@@ -210,7 +210,7 @@ y &lt;- X%*%beta
 writeData(X,y,&quot;Ex02b&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="c-features-of-different-scale" class="section level3">
@@ -233,7 +233,7 @@ y &lt;- X%*%beta
 writeData(X,y,&quot;Ex02c&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="d-correlated-features-and-with-different-scale" class="section level3">
@@ -257,7 +257,7 @@ y &lt;- X%*%beta
 writeData(X,y,&quot;Ex02d&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="e-correlated-features-and-with-different-scale-mising-data-and-outliers." class="section level3">
@@ -299,7 +299,7 @@ y[yna] &lt;- NA
 writeData(X,y,&quot;Ex02e&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 </div>
@@ -322,7 +322,7 @@ xx = mlbench.friedman1(n)
 writeData(xx$x,matrix(xx$y,ncol=1),&quot;Ex03a&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="b-friedman-2-benchmark-dataset" class="section level3">
@@ -341,7 +341,7 @@ xx = mlbench.friedman2(n)
 writeData(xx$x,matrix(xx$y,ncol=1),&quot;Ex03b&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="ozone-data-set-primarily-regression" class="section level3">
@@ -360,7 +360,7 @@ y &lt;- Ozone[,4]
 writeData(X,y,&quot;Ex04&quot;)</code></pre>
 <pre><code>## function (x) 
 ## dim(x)[1L]
-## &lt;bytecode: 0x1e1a5c0&gt;
+## &lt;bytecode: 0x22e35c0&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 </div>
 <div id="satellite-image-data-primarily-multi-class-classification" class="section level3">
@@ -410,10 +410,23 @@ write.csv(Satellite,&quot;Ex05.class.csv&quot;,row.names = F)</code></pre>
 <li>Concepts: Data cleaning, transformations, check residuals, Iterate between input-model-output-validate</li>
 <li>Methods: Best subset selection (forward, backward, stagewise), lasso, LARS</li>
 </ul></li>
+<li>Provide diagnostic plots and critique the model fit (Regression)
+<ul>
+<li>DataSets: All;</li>
+<li>Miconception:</li>
+<li>Concepts: Residual plots, Generalization Error, Test and Train errors, Model fit statistics such as AIC, BIC<br />
+</li>
+<li>Techniques/Methods: Cross-Validation, RMSE,</li>
+</ul></li>
+<li>Provide diagnostic plots and critique the model fit (Classification)
+<ul>
+<li>DataSets: All;</li>
+<li>Miconception:</li>
+<li>Concepts: Class Imbalance, Multi-class classification, RoC Curve, Classification Truth Table, type-1,2 errors, Classifier summaries</li>
+<li>Techniques/Methods: Cross-validation, genie-entropy,logistic-regression, Decision-Trees, Resampling</li>
+</ul></li>
 </ol>
-<p>6a. Provide diagnostic plots and critique the model fit (Regression) + DataSets: All; + Miconception: + Concepts: Residual plots, Generalization Error, Test and Train errors, Model fit statistics such as AIC, BIC<br />
- + Techniques/Methods: Cross-Validation, RMSE,</p>
-<p>6b. Provide diagnostic plots and critique the model fit (Classification) + DataSets: All; + Miconception: + Concepts: Class Imbalance, Multi-class classification, RoC Curve, Classification Truth Table, type-1,2 errors, Classifier summaries + Techniques/Methods: Cross-validation, genie-entropy,logistic-regression, Decision-Trees, Resampling</p>
+<p>```</p>
 </div>
 </div>
 
